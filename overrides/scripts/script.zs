@@ -11,7 +11,7 @@ recipes.remove(<mekanism:atomicdisassembler>);
 //Digital Miner
 recipes.remove(<mekanism:machineblock:4>);
 recipes.addShaped(<mekanism:machineblock:4>, 
-	[[<ore:circuitUltimate>, <ore:plateDenseObsidian>, <ore:circuitUltimate>], 
+	[[<ore:circuitUltimate>, <ore:blockErodium>, <ore:circuitUltimate>], 
 	[<mekanism:robit>, <mekanism:machineblock:15>, <mekanism:robit>], 
 	[<mekanism:teleportationcore>, <ic2:resource:13>, <mekanism:teleportationcore>]
 	]);
@@ -48,15 +48,10 @@ recipes.addShaped(<extrautils2:angelring>,
 <extrautils2:angelring>.addTooltip("Needs a shulker lasso at left and");
 <extrautils2:angelring>.addTooltip("a ghast one at the right. Have fun!");
 
-//Steel Blend to Steel Ingot in many furnaces
+//Steel Blend to Steel Ingot in all kinds of furnaces
 furnace.addRecipe(
 	<thermalfoundation:material:160>, 
 	<thermalfoundation:material:96>
-	);
-
-mods.mekanism.smelter.addRecipe(
-	<thermalfoundation:material:96>, 
-	<thermalfoundation:material:160>
 	);
 
 //Preventing a conflict with tiny charcoal
@@ -82,3 +77,110 @@ recipes.addShaped(<advgenerators:iron_frame> * 3,
 	[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],
 	[null, <ore:ingotIron>, null]
 	]);
+
+//Titanium ore processing
+var dustTitanium = <galacticraftplanets:item_basic_asteroids:9>;
+var ingotTitanium = <galacticraftplanets:item_basic_asteroids>;
+
+mods.actuallyadditions.Crusher.addRecipe(
+	dustTitanium * 2, 
+	<mw:titaniumore>, 
+	<mw:tantalumingot>, 
+	10
+	);
+
+mods.extrautils2.Crusher.add(
+	dustTitanium * 2, 
+	<mw:titaniumore>, 
+	<mw:tantalumingot>, 
+	0.1f
+	);
+
+mods.thermalexpansion.Pulverizer.addRecipe(
+	dustTitanium * 2, 
+	<mw:titaniumore>, 
+	1000, 
+	<mw:tantalumingot>, 10
+	);
+
+furnace.addRecipe(
+	ingotTitanium, 
+	<mw:titaniumore>
+	);
+
+mods.thermalexpansion.InductionSmelter.addRecipe(
+	ingotTitanium * 2, 
+	<mw:titaniumore>, 
+	<minecraft:sand:*>, 
+	1500, 
+	<mw:tantalumingot>, 100
+	);
+
+furnace.remove(<mw:titaniumingot>);
+
+//Tantalum Ore Processing
+
+mods.actuallyadditions.Crusher.addRecipe(
+	<mw:tantalumingot> * 3, 
+	<mw:tantalumore>, 
+	<appliedenergistics2:material:5>, 
+	30
+	);
+
+mods.extrautils2.Crusher.add(
+	<mw:tantalumingot> * 3, 
+	<mw:tantalumore>, 
+	<appliedenergistics2:material:5>, 
+	0.3f
+	);
+
+mods.thermalexpansion.Pulverizer.addRecipe(
+	<mw:tantalumingot> * 3, 
+	<mw:tantalumore>, 
+	1000, 
+	<appliedenergistics2:material:5>, 30
+	);
+
+furnace.addRecipe(
+	<mw:tantalumingot>, 
+	<mw:tantalumore>
+	);
+
+mods.thermalexpansion.InductionSmelter.addRecipe(
+	<mw:tantalumingot> * 4, 
+	<mw:tantalumore>, 
+	<minecraft:sand:*>, 
+	1500, 
+	<thermalfoundation:material:866>, 60
+	);
+
+furnace.remove(<mw:tantalumingot>);
+
+//Silicon Ingot
+var ingotSilicon = <mw:silicon>;
+furnace.addRecipe(
+	ingotSilicon, 
+	<appliedenergistics2:material:5>
+	);
+furnace.addRecipe(
+	ingotSilicon,
+	<refinedstorage:silicon>
+	);
+furnace.addRecipe(
+	ingotSilicon, 
+	<galacticraftcore:basic_item:2>
+	);
+
+//OreDict Entry for Modern Warfare Ores
+var oreRuby = <ore:oreRuby>;
+oreRuby.add(<mw:rubyore>);
+var oreTitanium = <ore:oreTitanium>;
+oreTitanium.add(<mw:titaniumore>);
+var oreTantalum = <ore:oreTantalum>;
+oreTantalum.add(<mw:tantalumore>);
+var oreSulfur = <ore:oreSulfur>;
+oreSulfur.add(<mw:sulfurore>);
+
+//Modern Warfare ores mek processing
+mods.mekanism.enrichment.addRecipe(<mw:titaniumore>, dustTitanium * 2);
+mods.mekanism.enrichment.addRecipe(<mw:tantalumore>, <mw:tantalumingot> * 2);

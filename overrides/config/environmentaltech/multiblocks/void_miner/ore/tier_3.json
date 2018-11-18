@@ -146,6 +146,26 @@
       "id": "OD:oreOsmium"
     },
     {
+      "target": "white",
+      "weight": 203,
+      "id": "OD:oreTantalum"
+    },
+    {
+      "target": "light_gray",
+      "weight": 203,
+      "id": "OD:oreTitanium"
+    },
+    {
+      "target": "red",
+      "weight": 203,
+      "id": "OD:oreRuby"
+    },
+    {
+      "target": "yellow",
+      "weight": 203,
+      "id": "OD:oreSulfur"
+    },
+    {
       "target": "black",
       "weight": 128,
       "id": "OD:oreClathrateOilSand"

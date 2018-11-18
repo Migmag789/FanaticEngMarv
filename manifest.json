@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Fanatics Engineering Marvels",
-  "version": "1.7",
+  "version": "1.7.1",
   "author": "cosmicvulpes",
   "projectID": 306741,
   "files": [
@@ -57,7 +57,7 @@
     },
     {
       "projectID": 74072,
-      "fileID": 2571785,
+      "fileID": 2630883,
       "required": true
     },
     {
@@ -92,7 +92,7 @@
     },
     {
       "projectID": 238403,
-      "fileID": 2443194,
+      "fileID": 2580273,
       "required": true
     },
     {
@@ -102,7 +102,7 @@
     },
     {
       "projectID": 231095,
-      "fileID": 2633631,
+      "fileID": 2637047,
       "required": true
     },
     {
@@ -192,7 +192,7 @@
     },
     {
       "projectID": 59751,
-      "fileID": 2583367,
+      "fileID": 2638806,
       "required": true
     },
     {
@@ -222,7 +222,7 @@
     },
     {
       "projectID": 233105,
-      "fileID": 2626982,
+      "fileID": 2638496,
       "required": true
     },
     {
@@ -232,7 +232,7 @@
     },
     {
       "projectID": 253043,
-      "fileID": 2632700,
+      "fileID": 2638610,
       "required": true
     },
     {
@@ -247,7 +247,7 @@
     },
     {
       "projectID": 242638,
-      "fileID": 2547175,
+      "fileID": 2638738,
       "required": true
     },
     {
@@ -297,7 +297,7 @@
     },
     {
       "projectID": 261251,
-      "fileID": 2574107,
+      "fileID": 2638317,
       "required": true
     },
     {
@@ -382,7 +382,7 @@
     },
     {
       "projectID": 260327,
-      "fileID": 2633228,
+      "fileID": 2636125,
       "required": true
     },
     {
@@ -412,7 +412,7 @@
     },
     {
       "projectID": 223735,
-      "fileID": 2590277,
+      "fileID": 2623412,
       "required": true
     },
     {
@@ -452,22 +452,22 @@
     },
     {
       "projectID": 289479,
-      "fileID": 2635764,
+      "fileID": 2638459,
       "required": true
     },
     {
       "projectID": 286703,
-      "fileID": 2628972,
+      "fileID": 2639081,
       "required": true
     },
     {
       "projectID": 292217,
-      "fileID": 2622758,
+      "fileID": 2638191,
       "required": true
     },
     {
       "projectID": 228756,
-      "fileID": 2533664,
+      "fileID": 2638052,
       "required": true
     },
     {
@@ -482,7 +482,7 @@
     },
     {
       "projectID": 292785,
-      "fileID": 2574249,
+      "fileID": 2637411,
       "required": true
     },
     {
@@ -527,7 +527,7 @@
     },
     {
       "projectID": 266515,
-      "fileID": 2628448,
+      "fileID": 2637221,
       "required": true
     },
     {
@@ -567,12 +567,12 @@
     },
     {
       "projectID": 237903,
-      "fileID": 2634706,
+      "fileID": 2638260,
       "required": true
     },
     {
       "projectID": 253462,
-      "fileID": 2619030,
+      "fileID": 2638264,
       "required": true
     },
     {
@@ -597,12 +597,12 @@
     },
     {
       "projectID": 224641,
-      "fileID": 2616385,
+      "fileID": 2638497,
       "required": true
     },
     {
       "projectID": 250617,
-      "fileID": 2546862,
+      "fileID": 2636666,
       "required": true
     },
     {
@@ -672,7 +672,7 @@
     },
     {
       "projectID": 302390,
-      "fileID": 2635405,
+      "fileID": 2638819,
       "required": true
     },
     {
@@ -728,6 +728,21 @@
     {
       "projectID": 252354,
       "fileID": 2464501,
+      "required": true
+    },
+    {
+      "projectID": 223525,
+      "fileID": 2636899,
+      "required": true
+    },
+    {
+      "projectID": 222789,
+      "fileID": 2445236,
+      "required": true
+    },
+    {
+      "projectID": 243788,
+      "fileID": 2605335,
       "required": true
     }
   ],
