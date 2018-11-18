@@ -17,7 +17,7 @@ recipes.addShaped(<mekanism:machineblock:4>,
 	]);
 
 //Mekanism Jetpack
-var hydrtank = <mekanism:gastank>.withTag({tier: 0, mekData: {stored: {amount: 64000, gasName: "hydrogen"}}, No_Place: 1 as byte});
+var hydrtank = <mekanism:gastank>.withTag({tier: 0, mekData: {stored: {amount: 64000, gasName: "hydrogen"}}});
 recipes.remove(<mekanism:jetpack>);
 recipes.addShaped(<mekanism:jetpack>, 
 	[[<ore:gearSteel>, <ore:circuitAdvanced>, <ore:gearSteel>], 
